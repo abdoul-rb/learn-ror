@@ -1,8 +1,15 @@
 puts "Somme de nombre compris entre 1 et un nombre saisie par l'utilisateur "
 
 puts "Entrez un nombre : "
-var = gets.chomp!.to_i
+nb = gets.chomp.to_i
 
-somme = (1..var).reduce { |a,b| a + b }
+#puts (1..nb).inject { |a,b| a + b }
+puts (1..nb).reduce { |a,b| a + b }
+#puts (1..nb).reduce (:+)
+#puts (1..nb).sum
 
-puts "Somme = " + somme
+
+sum = 0
+for value in (1..nb)
+ sum += value
+end

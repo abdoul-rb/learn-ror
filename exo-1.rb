@@ -6,7 +6,7 @@ var2 = gets.chomp!
 
 puts var1 + " " + var2
 
-if var1.size > 2 * var2.size
+if var1.size >= 2 * var2.size
  puts "Deux fois plus grande"
 else
  puts "Pas deux fois plus grand"

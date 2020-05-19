@@ -1,9 +1,12 @@
-i = 0
-
-while i <= 5
- puts "Entrez un nombre"
- tabs = gets.chomp!.to_i
- i += 1
+tabs = []
+for i in (1..5)
+ puts "Nombre #{i}
+ tabs.push(gets.chomp!.to_f)
+ #to_f : cast la valeur en float
 end
 
-tabs.sorts
+indice = tab.index(tab.max)
+puts "Indice de plus grand nombre : #{indice}"
+
+avg = tabs.sum / tabs.size
+puts "Moyenne des nombres : #{avg}
